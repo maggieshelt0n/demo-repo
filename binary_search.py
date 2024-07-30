@@ -2,6 +2,8 @@ def binary_search(list, target):
     first = 0
     last = len(list) - 1
 
+    #sets the index values of the first and last terms to identify them
+
     while first <= last:
         midpoint = (first + last)//2
 

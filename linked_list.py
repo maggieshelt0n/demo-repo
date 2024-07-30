@@ -107,6 +107,20 @@ class LinkedList:
                 current = current.next_node
 
         return current
+    
+    def node_at_index(self, index):
+        #pass at midpoint instead of traversing the whole list
+        if index == 0:
+            return self.head
+        else:
+            current = self.head
+            position = 0
+
+            while position < index:
+                current = current.next_node
+                position += 1
+
+            return current
 
     def __repr__(self):
         """
@@ -118,7 +132,7 @@ class LinkedList:
         while current:
             if current is self.head:
                 nodes.append("[Head: %s]" % current.data)
-            elif current.next is None:
+            elif current.next_node is None:
                 nodes.append("[Tail: %s]" % current.data)
             else:
                 nodes.append("[%s]" % current.data)
