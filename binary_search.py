@@ -1,3 +1,5 @@
+from merge_sort import merge_sort
+
 def binary_search(list, target):
     first = 0
     last = len(list) - 1
@@ -21,10 +23,15 @@ def verify(index):
     else:
         print("Target not found in list")
 
-numbers = [1,2,3,4,5,6,7,8,9,10]
+numbers = [65, 22, 37, 89, 200]
 
-result = binary_search(numbers,12)
+new_list = merge_sort(numbers)
+print(new_list)
+result = binary_search(new_list, 89)
+print(result)
 verify(result)
 
-result = binary_search(numbers,6)
-verify(result)
+#verify(result)
+
+#result = binary_search(numbers,37)
+#verify(result)
