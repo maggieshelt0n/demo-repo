@@ -16,8 +16,10 @@ def verify(result):
     print("Target found:", result)
 
 numbers = [1,2,3,4,5,6,7,8]
-result = recursive_binary_search(numbers, 12)
+result = recursive_binary_search(numbers, 8)
+print(result)
 verify(result)
+#verify(result)
 
-result = recursive_binary_search(numbers,6)
-verify(result)
+#result = recursive_binary_search(numbers,6)
+#verify(result)

@@ -87,6 +87,7 @@ alist = [91, 25, 34, 76, 99, 26, 61, 11, 2]
 l = merge_sort(alist)
 print(verify_sorted(alist))
 print(verify_sorted(l))
+print(l)
 
 """
 Checks whether the original list is sorted and finds that it is not
