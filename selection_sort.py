@@ -6,7 +6,7 @@ def selection_sort(values):
     sorted_list = []
     for i in range(0, len(values)):
         index_to_move = index_of_min(values)
-        sorted_list.append(int(values.pop(index_to_move)))
+        sorted_list.append(values.pop(index_to_move))
     return sorted_list
 
 def index_of_min(values):
@@ -18,3 +18,5 @@ def index_of_min(values):
 
 numbers = [77, 91, 45, 101, 190, 2, 4, 68]
 print(selection_sort(numbers))
+
+#takes a very long time to sort longer lists
